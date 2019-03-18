@@ -1,2 +1,2 @@
 # Layot-with-modul
-Test task for /pixelplus.ru
+Test task for pixelplus.ru
