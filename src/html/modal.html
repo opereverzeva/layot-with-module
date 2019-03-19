@@ -15,7 +15,26 @@
     <section class="modal">
         <div class="overline"></div>
         <section class="window">
-            .
+            <div class="window__close">
+                    &times;
+            </div>
+
+            <div class="feedback">
+                <h1 class="feedback__name">Обратная связь</h1>
+                <form action="" class="feedback__form" >
+                        <label for="name" class="feedback__title">Ваше имя *</label>
+                        <input type="text" class="feedback__input" id="name" name="name" required placeholder=" Поле обязательно для заполнения">
+                        <label for="phone" class="feedback__title">Телефон *</label>
+                        <input type="tel" pattern="[0-9]{9}" id="phone" class="feedback__input" name="phone" required placeholder=" Поле обязательно для заполнения">
+                        <label for="email" class="feedback__title">Email *</label>
+                        <input type="email" id="email" class="feedback__input" name="email" required placeholder=" Поле обязательно для заполнения">
+                        <label for="message" class="feedback__title">Сообщение</label>
+                        <textarea name="message" id="message" class="feedback__input feedback__input_textarea"></textarea>
+                        <input type="submit" class="feedback__button" value="ОТПРАВИТЬ">
+                    </form>
+            </div>
+            
+            
         </section>
 
     </section>
