@@ -23,9 +23,9 @@
                     <div class="contact">
                         <p class="contact__phone">+7(999)777-77-77</p>
                         <p class="contact__phone">+7(999)777-77-77</p>
-                        <p class="contact__feedback"><a href="" class="contact__link">
-                                Обратная связь
-                            </a></p>
+                        <div role="button" class="contact__feedback">
+                            Обратная связь
+                        </div>
                     </div>
                 </section>
             </div>
@@ -42,19 +42,17 @@
             </div>
         </nav>
         <section class="slider">
-            <ul class="slider__slide">
-                <li class="slider__page slider__page_active">
-                    <img src="../img/first.png" alt="first_image" class="slider__image slider__image_first">
-                </li>
-                <li class="slider__page">
-                    <img src="../img/second.png" alt="second_image" class="slider__image slider__image_second">
-                </li>
-            </ul>
+            <div class="slider__slide slide slide_active">
+                <img src="../img/first.png" alt="first_image" class="slide__image">
+            </div>
+            <div class="slider__slide slide ">
+                <img src="../img/second.png" alt="first_image" class="slide__image">
+            </div>
 
             <div class="slider__button">
                 <div class="container">
-                    <img src="../img/arrow.png" alt="previous" class="slider__pre">
-                    <img src="../img/arrow.png" alt="next" class="slider__next">
+                    <img role="button" src="../img/arrow.png" alt="previous" class="slider__pre slider__button-img">
+                    <img role="button" src="../img/arrow.png" alt="next" class="slider__next slider__button-img">
                 </div>
 
             </div>
@@ -248,6 +246,42 @@
             </aside>
         </div>
     </footer>
+
+    <!-- modal window -->
+
+    <section class="modal">
+        <div class="overlay"></div>
+        <section class="window">
+            <div class="window__close">
+                &times;
+            </div>
+
+            <div class="feedback">
+                <h1 class="feedback__name">Обратная связь</h1>
+                <form action="" class="feedback__form">
+                    <label for="name" class="feedback__title">Ваше имя *</label>
+                    <input type="text" class="feedback__input" id="name" name="name" required
+                        placeholder=" Поле обязательно для заполнения">
+                    <label for="phone" class="feedback__title">Телефон *</label>
+                    <input type="tel" pattern="[0-9]{9}" id="phone" class="feedback__input" name="phone" required
+                        placeholder=" Поле обязательно для заполнения">
+                    <label for="email" class="feedback__title">Email *</label>
+                    <input type="email" id="email" class="feedback__input" name="email" required
+                        placeholder=" Поле обязательно для заполнения">
+                    <label for="message" class="feedback__title">Сообщение</label>
+                    <textarea name="message" id="message" class="feedback__input feedback__input_textarea"></textarea>
+                    <input type="submit" class="feedback__button" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+
+
+        </section>
+
+    </section>
+
+
+
+
 </body>
 <script src="../js/index.js"></script>
 

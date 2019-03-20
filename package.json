@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "autoprefixer": "^9.5.0",
+    "cssnano": "^4.1.10",
     "posthtml-expressions": "^1.1.0",
     "posthtml-extend": "^0.3.0",
     "posthtml-modules": "^0.4.2",
